@@ -4,7 +4,7 @@ import {
 } from "react-router-dom";
 import { AppShell, rem } from '@mantine/core';
 import { Outlet } from "react-router-dom";
-import { Footer } from "./Components"
+import { Footer, Header } from "./Components"
 import { ErrorPage, LandingPage } from "./Routes";
 
 function RootLayout() {
@@ -15,7 +15,7 @@ function RootLayout() {
       footer={{ height: rem(50)}}
     >
       <AppShell.Header>
-
+        <Header />
       </AppShell.Header>
       <AppShell.Main justify="center" align="center" w="full" h="full">
         <Outlet />
