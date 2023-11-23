@@ -2,7 +2,7 @@ import { Container, Group, ActionIcon, rem } from '@mantine/core';
 import { IconBrandGithub, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
 import { Link } from "react-router-dom";
 
-export default function Footer() {
+export function Footer() {
   return (
     <Container style={{ justifyContent: 'center', alignItems: 'center' }}>
       <Group h={50} gap={0} justify="flex-end">

@@ -2,19 +2,21 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import { AppShell } from '@mantine/core';
+import { AppShell, rem } from '@mantine/core';
 import { Outlet } from "react-router-dom";
-import ErrorPage from "./Routes/ErrorPage";
-import LandingPage from "./Routes/LandingPage";
-import Footer from "./Components/Footer"
-import { rem } from "@mantine/core";
+import { Footer } from "./Components"
+import { ErrorPage, LandingPage } from "./Routes";
 
 function RootLayout() {
 
   return (
     <AppShell
+      header={{ height: rem(100)}}
       footer={{ height: rem(50)}}
     >
+      <AppShell.Header>
+
+      </AppShell.Header>
       <AppShell.Main justify="center" align="center" w="full" h="full">
         <Outlet />
       </AppShell.Main>

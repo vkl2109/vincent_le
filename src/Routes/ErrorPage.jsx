@@ -1,7 +1,7 @@
 import { useRouteError, useNavigate } from "react-router-dom";
 import { Title, Text, Button, Container, Group } from '@mantine/core';
 
-export default function ErrorPage () {
+export function ErrorPage () {
   const error = useRouteError();
   console.error(error);
   const navigate = useNavigate();
