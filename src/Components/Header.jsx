@@ -42,7 +42,7 @@ export function Header () {
     ));
 
     return(
-        <Group h={rem(100)} justify="space-between" p="sm">
+        <Group h={rem(100)} justify="space-between" p="md">
             <Link to="/" style={{ height: '100%'}}>
                 <Image src={VINNI} h="100%" />
             </Link>
