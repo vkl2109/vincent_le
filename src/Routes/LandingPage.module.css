@@ -1,6 +1,7 @@
 .backgroundWaves {
     background-image: linear-gradient(to right, rgba(29, 30, 48, 1), rgba(29, 30, 48, 0.75), rgba(0, 0, 0, 0));
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
