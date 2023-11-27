@@ -10,7 +10,7 @@ import VINNI from "../assets/VINNI.png"
 import { useState, useEffect } from 'react';
 import { useLocation, Link } from "react-router-dom"
 import { useDisclosure } from '@mantine/hooks';
-import classes from "./Header.module.css"
+import classes from "../CSS/Header.module.css"
 
 const links = [
   { link: '/music', label: 'Music' },
