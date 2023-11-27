@@ -10,6 +10,7 @@ import VINNI from "../assets/VINNI.png"
 import { useState, useEffect } from 'react';
 import { useLocation, Link } from "react-router-dom"
 import { useDisclosure } from '@mantine/hooks';
+import classes from "./Header.module.css"
 
 const links = [
   { link: '/music', label: 'Music' },
@@ -35,7 +36,8 @@ export function Header () {
             setActive(link.link)
         }}
         >
-            <Text size="xl" td={active == link.link ? "underline" : null}>
+            <Text size="xl" td={active == link.link ? "underline" : null}
+            class={classes.link}>
                 {link.label}
             </Text>
         </Link>

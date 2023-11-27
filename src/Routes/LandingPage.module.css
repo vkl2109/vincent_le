@@ -1,0 +1,46 @@
+.backgroundWaves {
+    background-image: linear-gradient(to right, rgba(29, 30, 48, 1), rgba(29, 30, 48, 0.75), rgba(0, 0, 0, 0));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerCard {
+    position: relative;
+    width: rem(200);
+    height: rem(200);
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.avatar,
+.avatarBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    overflow: hidden;
+    align-self: center;
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+    /* Hide the back side when facing away */
+}
+
+.avatar {
+    border: 2px solid white;
+    border-radius: rem(100);
+}
+
+.avatar:hover {
+    transform: scale(1.1);
+}
+
+.avatarBack {
+    transform: rotateY(180deg);
+}
+
