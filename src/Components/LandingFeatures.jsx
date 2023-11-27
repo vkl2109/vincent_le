@@ -1,20 +1,76 @@
 import {
     Group,
-    Title,
     Stack,
     Button,
     rem,
     Badge,
-    Card,
-    Image,
-    Pill,
-    Text,
     Divider
 } from "@mantine/core"
-import {
-    turbo1031,
-    hyve
-} from "../assets"
+import { FeatureCard } from "./FeatureCard"
+
+const featuredData = [
+    {
+        id: 0,
+        name: 'Hyve',
+        slogan: 'Fund Events With Friends',
+        image: 'hyve',
+        description: 'A new event scheduling and payments automation platform: send invites, collect money upfront, and withdraw funds all in one place.',
+        techStack: [
+            {
+                id: 0,
+                name: 'React Native'
+            },
+            {
+                id: 1,
+                name: 'Firebase',
+            },
+            {
+                id: 2,
+                name: 'Expo Go',
+            }
+        ],
+        links: [
+            {
+                id: 0,
+                link: 'https://www.joinhyve.io/',
+                name: 'Landing Page',
+            },
+            {
+                id: 1,
+                link: 'https://apps.apple.com/us/app/hyve-fund-events-with-friends/id6449512036',
+                name: 'App Store'
+            }
+        ]
+    },
+    {
+        id: 1,
+        name: 'Turbo1031',
+        slogan: 'Lightning Fast 1031 Exchanges',
+        image: 'turbo1031',
+        description: 'An automated 1031 exchange forms platform with secure user auth, Stripe payment processing, PDF auto-completion, and automated email reminders.',
+        techStack: [
+            {
+                id: 0,
+                name: 'React'
+            },
+            {
+                id: 1,
+                name: 'Django',
+            },
+            {
+                id: 2,
+                name: 'Ant Design',
+            }
+        ],
+        links: [
+            {
+                id: 0,
+                link: 'https://www.turbo1031exchange.com/',
+                name: 'Full Site'
+            },
+        ]
+    }
+]
 
 export function LandingFeatures () {
     return(
@@ -22,10 +78,15 @@ export function LandingFeatures () {
             justify="start"
             align="center"
             p="xl">
-            <Badge size={rem(30)} p="xl">My Work</Badge>
+            <Badge size={rem(30)} variant="outline" p="xl">Featured Work</Badge>
             <Divider my="sm" color="white" w="90vw" />
             <Group gap="xl" justify="center" wrap>
-                <Card padding="lg" radius="md" withBorder w={rem(400)}>
+                {featuredData.map(feature => {
+                    return(
+                        <FeatureCard cardData={feature} key={feature.id} />
+                    )
+                })}
+                {/* <Card padding="lg" radius="md" withBorder w={rem(400)}>
                     <Card.Section>
                         <Image
                         src={hyve}
@@ -88,8 +149,9 @@ export function LandingFeatures () {
                     >
                         Full Site
                     </Button>
-                </Card>
+                </Card> */}
             </Group>
+            <Button size="xl" variant="light" radius="xl">See More</Button>
         </Stack>
     )
 }

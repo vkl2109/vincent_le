@@ -8,11 +8,7 @@ import {
     rem,
 } from "@mantine/core"
 import { useDisclosure } from "@mantine/hooks"
-import { 
-    waves,
-    vincentle,
-    logo
-} from "../assets"
+import images from "../assets"
 import classes from "../CSS/LandingPage.module.css"
 
 export function LandingBanner () {
@@ -24,7 +20,7 @@ export function LandingBanner () {
 
     return(
         <BackgroundImage 
-            src={waves}
+            src={images.waves}
             h={"calc(100vh - var(--app-shell-header-height, 0px) - var(--app-shell-footer-height, 0px)"}
             >
             <Group
@@ -38,11 +34,11 @@ export function LandingBanner () {
                     onClick={toggle}
                     style={{ transform: opened ? "rotateY(360deg)" : "rotateY(0deg)"}}>
                         <Avatar 
-                            src={vincentle}
+                            src={images.vincentle}
                             class={classes.avatar}
                             />
                         <Avatar 
-                            src={logo}
+                            src={images.logo}
                             p="xl"
                             class={classes.avatarBack}
                             />
@@ -56,7 +52,7 @@ export function LandingBanner () {
                 </Title>
                 <Button 
                 onClick={handleClick}
-                size="xl" variant="filled" radius="xl" bg="white" c="black">
+                size="xl" variant="gradient" radius="xl">
                     Work With Me
                 </Button>
             </Group>

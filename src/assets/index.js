@@ -7,5 +7,15 @@ import vincentle from './vincentle.png';
 import VINNI from './VINNI.png';
 import waves from './waves.svg';
 
-// Export each image
-export { hyve, logo, react, turbo1031, vincentle, VINNI, waves };
+// create image map
+const images = { 
+    hyve, 
+    logo, 
+    react, 
+    turbo1031, 
+    vincentle, 
+    VINNI, 
+    waves 
+};
+
+export default images
