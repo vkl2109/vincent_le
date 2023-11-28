@@ -6,6 +6,7 @@ import turbo1031 from './turbo1031.png';
 import vincentle from './vincentle.png';
 import VINNI from './VINNI.png';
 import waves from './waves.svg';
+import hermitcrab from './hermitcrab.png'
 
 // create image map
 const images = { 
@@ -15,7 +16,8 @@ const images = {
     turbo1031, 
     vincentle, 
     VINNI, 
-    waves 
+    waves,
+    hermitcrab
 };
 
 export default images

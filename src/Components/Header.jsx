@@ -13,6 +13,7 @@ import { useDisclosure } from '@mantine/hooks';
 import classes from "../CSS/Header.module.css"
 
 const links = [
+  { link: '/about', label: 'About'},
   { link: '/music', label: 'Music' },
   { link: '/game', label: 'Game' },
   { link: '/portfolio', label: 'Portfolio' }
@@ -56,12 +57,13 @@ export function Header () {
             <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
           </Menu.Target>
           <Menu.Dropdown>
-            <Menu.Item component="a" href="/music">
-              Music
-            </Menu.Item>
-            <Menu.Item component="a" href="/game">
-              Game
-            </Menu.Item>
+            {links.map((link, i) => {
+              return(
+                <Menu.Item key={i} component="a" href={link.link}>
+                  {link.label}
+                </Menu.Item>
+              )
+            })}
           </Menu.Dropdown>
         </Menu>
         </Group>
