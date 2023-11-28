@@ -1,5 +1,5 @@
 import { useRouteError, useNavigate } from "react-router-dom";
-import { Title, Text, Button, Container, Group } from '@mantine/core';
+import { Title, Text, Badge, Button, Stack, Group, rem } from '@mantine/core';
 
 export function ErrorPage () {
   const error = useRouteError();
@@ -11,8 +11,8 @@ export function ErrorPage () {
   }
 
   return (
-    <Container>
-      <div>404</div>
+    <Stack justify="center" align="center" h="calc(100vh - var(--app-shell-header-height, 0px) - var(--app-shell-footer-height, 0px)">
+      <Badge size={rem(50)} p="xl">404</Badge>
       <Title>You have found a secret place.</Title>
       <Text size="lg" align="center">
         Unfortunately, this is only a 404 page. You may have mistyped the address, or the page has
@@ -23,6 +23,6 @@ export function ErrorPage () {
           Take me back to home page
         </Button>
       </Group>
-    </Container>
+    </Stack>
   );
 }

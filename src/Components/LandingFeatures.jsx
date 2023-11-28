@@ -7,6 +7,7 @@ import {
     Divider
 } from "@mantine/core"
 import { FeatureCard } from "./FeatureCard"
+import { useNavigate } from "react-router-dom"
 
 const featuredData = [
     {
@@ -33,7 +34,7 @@ const featuredData = [
             {
                 id: 0,
                 link: 'https://www.joinhyve.io/',
-                name: 'Landing Page',
+                name: 'joinhyve.io',
             },
             {
                 id: 1,
@@ -66,7 +67,7 @@ const featuredData = [
             {
                 id: 0,
                 link: 'https://www.turbo1031exchange.com/',
-                name: 'Full Site'
+                name: 'turbo1031exchange.com'
             },
         ]
     },
@@ -94,13 +95,19 @@ const featuredData = [
             {
                 id: 0,
                 link: 'https://www.codingforhermitcrabs.org/',
-                name: 'Full Site'
+                name: 'codingforhermitcrabs.org'
             }
         ]
     }
 ]
 
 export function LandingFeatures () {
+    const navigate = useNavigate()
+
+    const handleMore = () => {
+        navigate('/portfolio')
+    }
+
     return(
         <Stack 
             justify="start"
@@ -115,7 +122,7 @@ export function LandingFeatures () {
                     )
                 })}
             </Group>
-            <Button size="xl" variant="light" radius="xl">See More</Button>
+            <Button onClick={handleMore} size="xl" variant="light" radius="xl">See More</Button>
         </Stack>
     )
 }

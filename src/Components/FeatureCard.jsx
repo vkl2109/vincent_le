@@ -25,7 +25,7 @@ export function FeatureCard ({ cardData }) {
             </Card.Section>
             <Card.Section p="md" withBorder justify="center" align="center">
                 <Stack gap="sm" justify="center" align="center" mb="sm">
-                    <Title>{cardData.name}</Title>
+                    <Title order={2}>{cardData.name}</Title>
                     <Badge variant="outline" size="lg">{cardData.slogan}</Badge>
                 </Stack>
                 <Text fz="md" c="dimmed" fw={300} lineClamp={3}>
