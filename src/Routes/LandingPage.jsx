@@ -1,9 +1,11 @@
 import {
     Stack,
+    Divider
 } from "@mantine/core"
 import { 
     LandingBanner,
-    LandingFeatures
+    LandingFeatures,
+    LandingSkills
 } from "../Components"
 
 export function LandingPage () {
@@ -11,5 +13,7 @@ export function LandingPage () {
     return(<Stack>
         <LandingBanner />
         <LandingFeatures />
+        <Divider />
+        <LandingSkills />
     </Stack>)
 }

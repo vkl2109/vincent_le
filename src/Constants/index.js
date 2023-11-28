@@ -169,7 +169,7 @@ const otherData = [
             },
             {
                 id: 2,
-                name: 'AWS'
+                name: 'Azure'
             }
         ],
         links: [
@@ -184,7 +184,105 @@ const otherData = [
 
 const totalData = [...featuredData, ...otherData]
 
+const skillData = [
+    {
+        id: 0,
+        category: 'Front End Frameworks',
+        list: [
+            {
+                id: 0,
+                name: 'React'
+            },
+            {
+                id: 1,
+                name: 'React Native',
+            },
+            {
+                id: 3,
+                name: 'Next.js'
+            },
+        ]
+    },
+    {
+        id: 1,
+        category: 'Back End Frameworks',
+        list: [
+            {
+                id: 0,
+                name: 'Django',
+            },
+            {
+                id: 2,
+                name: 'Flask'
+            },
+            {
+                id: 3,
+                name: 'Ruby on Rails'
+            }
+        ]
+    },
+    {
+        id: 2,
+        category: 'UI Libraries',
+        list: [
+            {
+                id: 0,
+                name: 'Mantine UI',
+            },
+            {
+                id: 1,
+                name: 'Ant Design',
+            },
+            {
+                id: 2,
+                name: 'Material UI',
+            },
+            {
+                id: 3,
+                name: 'Chakra UI',
+            }
+        ]
+    },
+    {
+        id: 3,
+        category: 'Databases',
+        list: [
+            {
+                id: 0,
+                name: 'MongoDB',
+            },
+            {
+                id: 1,
+                name: 'PostgreSQL'
+            },
+            {
+                id: 2,
+                name: 'Firebase',
+            },
+        ]
+    },
+    {
+        id: 4,
+        category: 'Cloud',
+        list: [
+            {
+                id: 0,
+                name: 'AWS'
+            },
+            {
+                id: 1,
+                name: 'Azure',
+            },
+            {
+                id: 2,
+                name: 'GCP'
+            }
+        ]
+    }
+]
+
 export {
     featuredData,
-    totalData
+    totalData,
+    skillData
 }
