@@ -7,6 +7,9 @@ import vincentle from './vincentle.png';
 import VINNI from './VINNI.png';
 import waves from './waves.svg';
 import hermitcrab from './hermitcrab.png'
+import finsnap from './finsnap.png'
+import bulletin from './bulletin.png'
+import dept from './dept.png'
 
 // create image map
 const images = { 
@@ -17,7 +20,10 @@ const images = {
     vincentle, 
     VINNI, 
     waves,
-    hermitcrab
+    hermitcrab,
+    finsnap,
+    bulletin,
+    dept
 };
 
 export default images

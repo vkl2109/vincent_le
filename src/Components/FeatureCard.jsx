@@ -43,6 +43,7 @@ export function FeatureCard ({ cardData }) {
                 <Group
                 w="100%"
                 gap="xs"
+                px="sm"
                 justify="center"
                 align="center">
                     {cardData.links.map(link => {

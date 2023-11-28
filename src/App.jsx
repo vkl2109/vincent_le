@@ -2,10 +2,20 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import { AppShell, rem } from '@mantine/core';
+import { 
+  AppShell, 
+  rem 
+} from '@mantine/core';
 import { Outlet } from "react-router-dom";
-import { Footer, Header } from "./Components"
-import { ErrorPage, LandingPage } from "./Routes";
+import { 
+  Footer, 
+  Header 
+} from "./Components"
+import { 
+  ErrorPage, 
+  LandingPage, 
+  PortfolioPage 
+} from "./Routes";
 
 function RootLayout() {
 
@@ -34,6 +44,10 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <LandingPage /> },
+      {
+        path: '/Portfolio',
+        element: <PortfolioPage />
+      },
     ],
   },
 ]);
