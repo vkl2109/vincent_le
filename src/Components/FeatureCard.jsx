@@ -15,7 +15,7 @@ import PropTypes from 'prop-types';
 
 export function FeatureCard ({ cardData }) {
     return(
-        <Card padding="lg" radius="md" withBorder w={rem(400)}>
+        <Card radius="md" withBorder maw={rem(400)}>
             <Card.Section withBorder>
                 <Image
                 src={images[cardData.image]}
