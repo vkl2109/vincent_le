@@ -10,6 +10,7 @@ import {
 import { useDisclosure } from "@mantine/hooks"
 import images from "../assets"
 import classes from "../CSS/LandingPage.module.css"
+import { TextScramble } from "./TextScramble"
 
 export function LandingBanner () {
     const [ opened, { toggle }] = useDisclosure(false)
@@ -47,9 +48,7 @@ export function LandingBanner () {
                 <Title order={1} mt="lg">
                     {"Hi, I'm Vincent!"}
                 </Title>
-                <Title size={rem(50)} m="lg">
-                    Full Stack Mobile App & Web Developer
-                </Title>
+                <TextScramble text={"Full Stack Mobile App & Web Developer"}/>
                 <Button 
                 onClick={handleClick}
                 size="xl" variant="gradient" radius="xl">
