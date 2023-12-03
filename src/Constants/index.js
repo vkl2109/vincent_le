@@ -259,8 +259,21 @@ const skillData = [
     }
 ]
 
+const bio = `I'm Vincent Le, a passionate and versatile individual currently pursuing a Master's degree in Computer Science at Columbia University. My journey has been a unique blend of technology, creativity, and innovation.
+
+During my undergraduate years at Columbia, I embarked on a double major adventure in Pre-Medicine and Music, fueled by my deep love for both healing and harmonies. This unconventional path led me to explore the fascinating realm of Music Therapy, where I researched the therapeutic applications of music.
+
+After graduation, I took a captivating turn into clinical research at NYU, specializing in pain management. While medical school seemed like the natural progression, I pivoted towards web development, teaching myself the ropes and then honing my skills through online coding resources.
+
+Currently, I'm enrolled in Columbia's Master's program in Computer Science, with a focus on Machine Learning. My experience spans from being a lead mobile app developer for Hyve, a social event scheduling app, to working as a freelance web developer for a real estate firm automating 1031 exchanges.
+
+When I'm not coding, you'll find me lost in the world of music or exploring the intersection of technology and art. I'm thrilled to share my journey with you and engage in exciting projects that bridge the gap between creativity and computation.
+
+Let's connect and create something amazing together!`
+
 export {
     featuredData,
     totalData,
-    skillData
+    skillData,
+    bio
 }

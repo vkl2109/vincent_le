@@ -3,15 +3,21 @@ import {
   IconBrandGithub, 
   IconBrandYoutube, 
   IconBrandInstagram,
-  IconBrandLinkedin
+  IconBrandLinkedin,
+  IconMail,
+  IconPhone
 } from '@tabler/icons-react';
 import { Link } from "react-router-dom";
 
 export function Footer() {
+
   return (
-    <Group h={rem(75)} justify="space-evenly" align="center">
+    <Group h={rem(75)} justify="space-evenly" align="center" wrap>
       <Link to={"mailto:vincentle2021@gmail.com"} target="_blank">
-        <Button variant="subtle">vincentle2021@gmail.com</Button>
+        <ActionIcon hiddenFrom="sm" size="xl" color="gray" variant="outline" radius="xl">
+            <IconMail style={{ width: rem(24), height: rem(24) }} stroke={1.5} />
+        </ActionIcon>
+        <Button w={rem(300)} visibleFrom="sm" variant="subtle">vincentle2021@gmail.com</Button>
       </Link>
       <Group h="100%" justify="center" align="center">
         <Link to={"https://www.github.com/vkl2109"} target="_blank">
@@ -36,7 +42,10 @@ export function Footer() {
         </Link>
       </Group>
       <Link to={"tel:+1 818 207 7859"} target="_blank">
-        <Button variant="subtle">+1 (818) 207-7859</Button>
+        <ActionIcon hiddenFrom="sm" size="xl" color="gray" variant="outline" radius="xl">
+            <IconPhone style={{ width: rem(24), height: rem(24) }} stroke={1.5} />
+        </ActionIcon>
+        <Button visibleFrom="sm" w={rem(300)} variant="subtle">+1 (818) 207-7859</Button>
       </Link>
     </Group>
   );

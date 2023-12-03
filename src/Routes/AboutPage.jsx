@@ -1,18 +1,26 @@
 import {
     Stack,
+    Container
 } from "@mantine/core"
 import {
-    AvatarFlip
+    AvatarFlip,
+    TypingText
 } from "../Components"
+import { bio } from "../Constants"
 
 export function AboutPage () {
 
     return(
         <Stack 
-        justify="center"
+        justify="start"
         align="center"
-        h={"calc(100vh - var(--app-shell-header-height, 0px) - var(--app-shell-footer-height, 0px)"}>
+        p="xl"
+        h={"calc(100vh - var(--app-shell-header-height, 0px) - var(--app-shell-footer-height, 0px)"}
+        >
             <AvatarFlip />
+            <Container miw="50vw" maw="75vw">
+                <TypingText text={bio} />
+            </Container>
         </Stack>
     )
 }

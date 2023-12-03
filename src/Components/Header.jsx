@@ -14,8 +14,8 @@ import classes from "../CSS/Header.module.css"
 
 const links = [
   { link: '/about', label: 'About'},
-  { link: '/music', label: 'Music' },
-  { link: '/game', label: 'Game' },
+  // { link: '/music', label: 'Music' },
+  // { link: '/game', label: 'Game' },
   { link: '/portfolio', label: 'Portfolio' }
 ];
 
@@ -47,7 +47,7 @@ export function Header () {
     return(
         <Group h={rem(100)} justify="space-between" p="md">
             <Link to="/" style={{ height: '100%'}}>
-                <Image src={VINNI} h="100%" />
+                <Image src={VINNI} h="100%" maw="90vw"/>
             </Link>
             <Group gap={20} visibleFrom="sm">
                 {items}

@@ -23,7 +23,7 @@ const images = {
     hermitcrab,
     finsnap,
     bulletin,
-    dept
+    dept,
 };
 
 export default images
