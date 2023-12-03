@@ -3,6 +3,7 @@ import {
     Group,
     Divider,
     rem,
+    em,
     Badge,
     Title,
     Text,
@@ -12,6 +13,7 @@ import { IconDownload } from "@tabler/icons-react"
 import { SkillCard } from "../Components"
 import { skillData } from "../Constants"
 import resume from "../assets/Vincent_Le_Resume.pdf"
+import { useMediaQuery } from "@mantine/hooks"
 
 const resumeData = [
     {
@@ -41,6 +43,7 @@ const resumeData = [
 ]
 
 export function LandingSkills () {
+    const isMobile = useMediaQuery()
 
     return(
         <Stack
@@ -59,11 +62,13 @@ export function LandingSkills () {
                     return(<SkillCard key={skill.id} skill={skill}/>)
                 })}
             </Group> */}
-            <Stack>
+            <Stack w="75vw">
                 <Title>Education</Title>
-                <Group></Group>
+                <Text fw={900}>Columbia University in the City of New York</Text>
+                <Text c="dimmed">Master of Science in Computer Science</Text>
+                <Text c="dimmed">Bachelor of Arts in Music and Pre-Medicine</Text>
             </Stack>
-            <Group justify="space-between" align="start" w="75vw">
+            <Group justify="space-between" align="start" miw={"75vw"} wrap>
                 <Stack align="flex-start">
                     <Title>Working Experience</Title>
                     {resumeData.map((resume) => {
@@ -76,11 +81,11 @@ export function LandingSkills () {
                         )
                     })}
                 </Stack>
-                <Stack align="flex-start">
+                <Stack align="flex-end">
                     <Title>Skills</Title>
                     {skillData.map((skill) => {
                         return(
-                            <Stack key={skill.id} align="flex-start">
+                            <Stack key={skill.id} align="flex-end">
                                 {skill.list.map((item) => {
                                     return(<Text key={item.id}>{item.name}</Text>)
                                 })}
