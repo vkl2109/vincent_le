@@ -1,4 +1,4 @@
-import { Container, Group, ActionIcon, rem } from '@mantine/core';
+import { Group, ActionIcon, rem, Button } from '@mantine/core';
 import { 
   IconBrandGithub, 
   IconBrandYoutube, 
@@ -9,12 +9,15 @@ import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
-    <Container h={rem(75)} style={{ justifyContent: 'center', alignItems: 'center' }}>
-      <Group h="100%" gap={10} justify="center" align="center">
+    <Group h={rem(75)} justify="space-evenly" align="center">
+      <Link to={"mailto:vincentle2021@gmail.com"} target="_blank">
+        <Button variant="subtle">vincentle2021@gmail.com</Button>
+      </Link>
+      <Group h="100%" justify="center" align="center">
         <Link to={"https://www.github.com/vkl2109"} target="_blank">
-            <ActionIcon size="xl" color="gray" variant="outline" radius="xl">
-                <IconBrandGithub style={{ width: rem(24), height: rem(24) }} stroke={1.5} />
-            </ActionIcon>
+          <ActionIcon size="xl" color="gray" variant="outline" radius="xl">
+              <IconBrandGithub style={{ width: rem(24), height: rem(24) }} stroke={1.5} />
+          </ActionIcon>
         </Link>
         <Link to={"https://www.youtube.com/c/vincentlemusic"} target="_blank">
           <ActionIcon size="xl" color="gray" variant="outline" radius="xl">
@@ -32,6 +35,9 @@ export function Footer() {
           </ActionIcon>
         </Link>
       </Group>
-    </Container>
+      <Link to={"tel:+1 818 207 7859"} target="_blank">
+        <Button variant="subtle">+1 (818) 207-7859</Button>
+      </Link>
+    </Group>
   );
 }

@@ -11,13 +11,10 @@ import { useDisclosure } from "@mantine/hooks"
 import images from "../assets"
 import classes from "../CSS/LandingPage.module.css"
 import { TextScramble } from "./TextScramble"
+import { Link } from "react-router-dom";
 
 export function LandingBanner () {
     const [ opened, { toggle }] = useDisclosure(false)
-
-    const handleClick = () => {
-        window.open("mailto:vincentle2021@gmail.com")
-    }
 
     return(
         <BackgroundImage 
@@ -49,11 +46,12 @@ export function LandingBanner () {
                     {"Hi, I'm Vincent!"}
                 </Title>
                 <TextScramble text={"Full Stack Mobile App & Web Developer"}/>
-                <Button 
-                onClick={handleClick}
-                size="xl" variant="gradient" radius="xl">
-                    Work With Me
-                </Button>
+                <Link to={"mailto:vincentle2021@gmail.com"} target="_blank">
+                    <Button 
+                    size="xl" variant="gradient" radius="xl">
+                        Work With Me
+                    </Button>
+                </Link>
             </Group>
         </BackgroundImage>
     )

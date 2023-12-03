@@ -43,7 +43,9 @@ const resumeData = [
 ]
 
 export function LandingSkills () {
-    const isMobile = useMediaQuery()
+    const isMobile = useMediaQuery('(max-width: 48em)')
+
+    const StackGroup = isMobile ? Stack : Group;
 
     return(
         <Stack
@@ -68,7 +70,7 @@ export function LandingSkills () {
                 <Text c="dimmed">Master of Science in Computer Science</Text>
                 <Text c="dimmed">Bachelor of Arts in Music and Pre-Medicine</Text>
             </Stack>
-            <Group justify="space-between" align="start" miw={"75vw"} wrap>
+            <StackGroup justify="space-between" miw={"75vw"} wrap>
                 <Stack align="flex-start">
                     <Title>Working Experience</Title>
                     {resumeData.map((resume) => {
@@ -93,7 +95,7 @@ export function LandingSkills () {
                         )
                     })}
                 </Stack>
-            </Group>
+            </StackGroup>
             <Button 
                 size="xl" 
                 variant="light" 
