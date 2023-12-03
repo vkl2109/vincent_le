@@ -1,7 +1,9 @@
 import {
     Card,
     Title,
-    rem
+    rem,
+    Divider,
+    Text
 } from "@mantine/core"
 import PropTypes from 'prop-types';
 
@@ -10,6 +12,14 @@ export function SkillCard ({ skill }) {
     <Card p="xl" radius="lg" withBorder maw={rem(400)}>
       <Card.Section withBorder>
         <Title order={2}>{skill.category}</Title>
+        <Divider mt="sm"/>
+        {skill.list.map((item) => {
+          return (
+            <Text key={item.id} m="sm">
+              {item.name}
+            </Text>
+          )
+        })}
       </Card.Section>
     </Card>
     )

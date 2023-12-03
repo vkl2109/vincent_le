@@ -187,7 +187,7 @@ const totalData = [...featuredData, ...otherData]
 const skillData = [
     {
         id: 0,
-        category: 'Front End Frameworks',
+        category: 'Front End',
         list: [
             {
                 id: 0,
@@ -205,7 +205,7 @@ const skillData = [
     },
     {
         id: 1,
-        category: 'Back End Frameworks',
+        category: 'Back End',
         list: [
             {
                 id: 0,
@@ -218,28 +218,6 @@ const skillData = [
             {
                 id: 3,
                 name: 'Ruby on Rails'
-            }
-        ]
-    },
-    {
-        id: 2,
-        category: 'UI Libraries',
-        list: [
-            {
-                id: 0,
-                name: 'Mantine UI',
-            },
-            {
-                id: 1,
-                name: 'Ant Design',
-            },
-            {
-                id: 2,
-                name: 'Material UI',
-            },
-            {
-                id: 3,
-                name: 'Chakra UI',
             }
         ]
     },
