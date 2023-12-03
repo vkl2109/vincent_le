@@ -14,7 +14,8 @@ import {
 import { 
   ErrorPage, 
   LandingPage, 
-  PortfolioPage 
+  PortfolioPage,
+  AboutPage,
 } from "./Routes";
 
 function RootLayout() {
@@ -45,9 +46,13 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <LandingPage /> },
       {
-        path: '/Portfolio',
+        path: '/portfolio',
         element: <PortfolioPage />
       },
+      {
+        path: '/about',
+        element: <AboutPage />
+      }
     ],
   },
 ]);
