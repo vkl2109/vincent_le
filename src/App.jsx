@@ -22,7 +22,7 @@ function RootLayout() {
   return (
     <AppShell
       header={{ height: rem(100)}}
-      footer={{ height: rem(50)}}
+      footer={{ height: rem(75)}}
     >
       <AppShell.Header>
         <Header />
