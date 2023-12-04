@@ -28,7 +28,7 @@ export function FeatureCard ({ cardData }) {
                     <Title order={2}>{cardData.name}</Title>
                     <Badge variant="outline" size="lg">{cardData.slogan}</Badge>
                 </Stack>
-                <Text fz="md" c="dimmed" fw={300} lineClamp={3}>
+                <Text fz="md" c="dimmed" fw={300}>
                     {cardData?.description}
                 </Text>
                 <Group gap="sm" wrap p="sm"  justify="center">
