@@ -3,14 +3,13 @@ import {
     Group,
     Divider,
     rem,
-    em,
     Badge,
     Title,
     Text,
     Button
 } from "@mantine/core"
 import { IconDownload } from "@tabler/icons-react"
-import { SkillCard } from "../Components"
+// import { SkillCard } from "../Components"
 import { skillData } from "../Constants"
 import resume from "../assets/Vincent_Le_Resume.pdf"
 import { useMediaQuery } from "@mantine/hooks"
@@ -71,11 +70,11 @@ export function LandingSkills () {
                 <Text c="dimmed">Bachelor of Arts in Music and Pre-Medicine</Text>
             </Stack>
             <StackGroup justify="space-between" miw={"75vw"} wrap>
-                <Stack align="flex-start">
+                <Stack align={isMobile ? "center" : "flex-start"}>
                     <Title>Working Experience</Title>
                     {resumeData.map((resume) => {
                         return(
-                            <Stack key={resume.id} align="start">
+                            <Stack key={resume.id} align={isMobile ? "center" : "flex-start"}>
                                 <Text fw={700}>{resume.position}</Text>
                                 <Text>{resume.company}</Text>
                                 <Text c="dimmed">{resume.dates}</Text>
@@ -83,11 +82,11 @@ export function LandingSkills () {
                         )
                     })}
                 </Stack>
-                <Stack align="flex-end">
+                <Stack align={isMobile ? "center" : "flex-end"}>
                     <Title>Skills</Title>
                     {skillData.map((skill) => {
                         return(
-                            <Stack key={skill.id} align="flex-end">
+                            <Stack key={skill.id} align={isMobile ? "center" : "flex-end"}>
                                 {skill.list.map((item) => {
                                     return(<Text key={item.id}>{item.name}</Text>)
                                 })}

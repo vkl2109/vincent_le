@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Mondwest';
+    /* Replace with your font's name */
+    src: url('./brutalist.ttf') format('TrueType');
+    /* Replace with your font file's name */
+    font-weight: normal;
+    font-style: normal;
+}

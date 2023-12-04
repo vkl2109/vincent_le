@@ -15,7 +15,7 @@ export function AboutPage () {
         justify="start"
         align="center"
         p="xl"
-        h={"calc(100vh - var(--app-shell-header-height, 0px) - var(--app-shell-footer-height, 0px)"}
+        mih={"calc(100vh - var(--app-shell-header-height, 0px) - var(--app-shell-footer-height, 0px)"}
         >
             <AvatarFlip />
             <Container miw="50vw" maw="75vw">

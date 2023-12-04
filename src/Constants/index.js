@@ -4,7 +4,7 @@ const featuredData = [
         name: 'Hyve',
         slogan: 'Fund Events With Friends',
         image: 'hyve',
-        description: 'A new event scheduling and payments automation platform: send invites, collect money upfront, and withdraw funds all in one place.',
+        description: 'An event scheduling and payments automation platform: send invites, collect money upfront, and withdraw funds all in one place.',
         techStack: [
             {
                 id: 0,
@@ -65,7 +65,7 @@ const featuredData = [
         name: 'FinSnap',
         slogan: 'Finance in a Snap',
         image: 'finsnap',
-        description: 'A live chat mobile app promoting financial literacy utilizing a custom AI model, integrated with GPT-4, enabling user-friendly interaction with real time financial data',
+        description: 'A live chat mobile app promoting financial literacy utilizing a custom AI model, integrated with GPT-4.',
         techStack: [
             {
                 id: 0,
@@ -157,7 +157,7 @@ const otherData = [
         name: 'NYC DOI',
         slogan: 'Department of Investigation',
         image: 'dept',
-        description: 'AI chatbot trained on real time city govt web data providing users easy access to online city govt resources.',
+        description: 'AI chatbot trained on real time city govt web data providing users easy access to online city government resources.',
         techStack: [
             {
                 id: 0,

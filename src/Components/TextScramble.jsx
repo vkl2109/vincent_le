@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Text, rem, em } from '@mantine/core';
+import { Text, rem } from '@mantine/core';
 import PropTypes from 'prop-types';
 
 export function TextScramble ({ text }) {
@@ -66,7 +66,7 @@ export function TextScramble ({ text }) {
 
   return (
     <Text 
-    fz={rem(50)} fw={700} m="md"
+    fz={rem(35)} fw={700} m="md"
     align={"center"}
     dangerouslySetInnerHTML={{ __html: output }} />
   );

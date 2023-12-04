@@ -45,9 +45,9 @@ export function Header () {
     ));
 
     return(
-        <Group h={rem(100)} justify="space-between" p="md">
+        <Group h={rem(100)} justify="space-between" p="md" maw="100vw">
             <Link to="/" style={{ height: '100%'}}>
-                <Image src={VINNI} h="100%" maw="90vw"/>
+                <Image src={VINNI} h="100%" maw="50vw"/>
             </Link>
             <Group gap={20} visibleFrom="sm">
                 {items}
